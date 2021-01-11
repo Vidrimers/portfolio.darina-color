@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DarinaColor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/popup.css" rel="stylesheet" />
+    <link href="css/popup_gallery.css" rel="stylesheet" />
+    <link href="css/popup_glitch.css" rel="stylesheet" />
+    <!-- <link href="css/popup_glitch.scss" rel="stylesheet" /> -->
+    <link href="css/glitch.css" rel="stylesheet" />
+    <link href="css/anims.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <!-- <script src="js/TweenMax.min.js"></script> -->
+    <!-- <script src="js/EasePack.min.js"></script> -->
+    <!-- <script src="js/popup_glitch.js"></script> -->
+    <script src="js/popup.js"></script>
+  </head>
+  <body>
+    <div class="general">
+      <header>
+        <div class="header-menu">
+          <div class="header__menu-item header-left userpic">
+            <img class="userpic-img" src="img/userpic.jpg" alt="" />
+          </div>
+          <!-- <div class="header__menu-item name header-left"></div> -->
+          <a class="glitch_photo" href="#popup"
+            ><div
+              class="header__menu-item title glitch"
+              data-text="
+          DarinaColor"
+            >
+              DarinaColor
+            </div></a
+          >
+          <div class="header__menu-item contacts">
+            <a class="contacts-item" href="#main__content-contacts"
+              >Дарина Ширякова</a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="main__content">
+        <section id="main__content-about">
+          <h2 class="h-title">Об услуге</h2>
+          <div class="main__content-info">
+            <div class="main__content__about-left">
+              <img class="Photo" src="img/about.jpg" alt="" />
+            </div>
+            <div class="main__content__about-right">
+              <p class="mini-title">Привет, меня зовут Дарина, я колорист</p>
+              <div class="main_content__about-desc">
+                <div class="desc-item-info">
+                  <img src="img/ico/info.png" alt="" />
+                  <p>
+                    Я занимаюсь подбором оттенков, смешиванием красителей с
+                    целью получения нужного тона. Гораздо проще сделать
+                    однотонное окрашивание, достаточно просто подобрать оттенок
+                    с учётом исходного цвета прядей. Но сегодня в тренде
+                    контрастное окрашивание. Рассмотрим наиболее популярные
+                    техники:
+                  </p>
+                </div>
+                <div class="main_content__about-desc-item">
+                  <img class="desc-item-img" src="img/ico/desc.png" alt="" />
+                  <p class="desc-item-text">
+                    <span class="mini-title">Балаяж</span>
+                    <br />
+                    Цвет корней – максимально приближен к натуральному. На
+                    остальную длину пряди окрашиваются в более светлые оттенки.
+                    Преимущество техники в том, что даже при отрастании корней
+                    причёска смотрится красиво.
+                  </p>
+                </div>
+                <div class="main_content__about-desc-item">
+                  <img class="desc-item-img" src="img/ico/desc.png" alt="" />
+                  <p class="desc-item-text">
+                    <span class="mini-title">Шатуш</span>
+                    <br />
+                    При правильном выполнении получается мягкий переход
+                    оттенков. Мастер сначала делает начёс на прядях, затем
+                    наносит на неё краску.
+                  </p>
+                </div>
+                <div class="main_content__about-desc-item">
+                  <img class="desc-item-img" src="img/ico/desc.png" alt="" />
+                  <p class="desc-item-text">
+                    <span class="mini-title">Омбре</span>
+                    <br />
+                    Цвет как бы растягивается. Корни темные, к концам пряди
+                    постепенно светлеют. Особенно красиво такой градиент
+                    получается на длинных и средних волосах.
+                  </p>
+                </div>
+              </div>
+              <div class=".desc-item-price">
+                <img src="img/ico/price.png" alt="" />
+                <p>
+                  Доступная ценовая политика. Оптимальная стоимость позволит Вам
+                  выглядеть при этом сногсшибательно.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="main__content-portfolio">
+          <h2 class="h-title">Мои работы</h2>
+          <p class="mini-title">Здесь показаны некоторые мои работы</p>
+          <div id="main__content-list" class="main__content-list">
+            <a class="popup" href="img/list-items/1.jpg"
+              ><img
+                src="img/list-items/thumb/1_thumb.jpg"
+                alt=""
+                class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/2.jpg"
+              ><img
+                src="img/list-items/thumb/2_thumb.jpg"
+                alt=""
+                class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/3.jpg"
+              ><img src="img/list-items/3.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/4.jpg"
+              ><img src="img/list-items/4.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/5.jpg"
+              ><img src="img/list-items/5.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/6.jpg"
+              ><img src="img/list-items/6.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/7.jpg"
+              ><img src="img/list-items/7.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/8.jpg"
+              ><img src="img/list-items/8.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/9.jpg"
+              ><img src="img/list-items/9.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/10.jpg"
+              ><img src="img/list-items/10.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/11.jpg"
+              ><img src="img/list-items/11.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/12.jpg"
+              ><img src="img/list-items/12.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/13.jpg"
+              ><img src="img/list-items/13.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/14.jpg"
+              ><img src="img/list-items/14.jpg" alt="" class="list-items"
+            /></a>
+            <a class="popup" href="img/list-items/15.jpg"
+              ><img src="img/list-items/15.jpg" alt="" class="list-items"
+            /></a>
+          </div>
+        </section>
+        <section class="main__content-contacts" id="main__content-contacts">
+          <h2 class="h-title">Контакты</h2>
+          <p class="mini-title">
+            Связаться со мной можно через инстаграм, либо написать на почту:
+          </p>
+          <a
+            class="insta-link"
+            target="_blank"
+            href="https://www.instagram.com/darina_color/"
+            ><img class="insta" src="img/ico/insta.png" alt=""
+          /></a>
+          <form action="" method="get">
+            <input
+              disabled
+              class="form-item"
+              required
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+            <input
+              disabled
+              class="form-item"
+              required
+              type="city"
+              name="city"
+              placeholder="Город"
+            />
+            <input
+              disabled
+              class="form-item"
+              required
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+            />
+            <input
+              disabled
+              class="form-item"
+              required
+              type="email"
+              name="email"
+              placeholder="Почта"
+            />
+            <textarea
+              disabled
+              class="form-item textarea"
+              name=""
+              id=""
+              placeholder="Напишите ваши пожелания к заказу или отзыв"
+            ></textarea>
+            <button disabled type="submit" class="form-item btn">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer__container-left">
+            <p class="footer-author">Designed by SJ</p>
+          </div>
+
+          <div class="footer__container-right">
+            <a
+              target="_blank"
+              href="https://vidrimers.github.io/"
+              class="social-link"
+              ><img src="img/ico/site.png" alt="" class="social-img git-img"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.fl.ru/users/jarosiks/portfolio/"
+              class="socials"
+              ><img src="img/ico/fl.png" alt="" class="social-img fl-img"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/yaroslav-shiryakov-79a426183/"
+              class="socials"
+              ><img
+                src="img/ico/linkedin.svg"
+                alt=""
+                class="social-img in-img"
+            /></a>
+            <a
+              target="_blank"
+              href="https://vk.com/d1e_my_darling"
+              class="social-link"
+              ><img
+                src="img/ico/vk2_96_color.png"
+                alt=""
+                class="social-img vk-img"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/jarosik"
+              class="social-link"
+              ><img
+                src="img/ico/facebook_96_color.png"
+                alt=""
+                class="social-img fb-img"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="popup" class="popups">
+      <a href="#" class="popup__area"></a>
+      <a class="popup__close" href="#">X</a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <img src="img/glitch_photo.jpg" width="900px" alt="" />
+          <!-- <div class="popup_glitch"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="zoom-gallery">
+      <!--
+    
+      Width/height ratio of thumbnail and the main image must match to avoid glitches.
+    
+      If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable.
+    
+       -->
+      <!-- <a
+        href="http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg"
+        data-source="http://500px.com/photo/32736307"
+        target="_blank"
+        title="Into The Blue"
+        style="width: 193px; height: 125px"
+      >
+        <img
+          src="http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg"
+          width="193"
+          height="125"
+        />
+      </a>
+      <a
+        href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg"
+        data-source="http://500px.com/photo/32554131"
+        title="Light Sabre"
+        style="width: 82px; height: 125px"
+      >
+        <img
+          src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg"
+          width="82px"
+          height="125"
+        />
+      </a>
+    </div> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+  </body>
+</html>
