@@ -20,8 +20,8 @@ a#id.c1.c2:visited – элемент a с данным id, классами c1 
 * {
   /* margin: 0; */
   /* padding: 0; */
-  cursor: url(/img/cur/chrome/1.png), url(/img/cur/3.ani), default;
-  animation: cursor 600ms infinite;
+  /* cursor: url(/img/cur/chrome/1.png), url(/img/cur/3.ani), default;
+  animation: cursor 600ms infinite; */
 }
 
 ::-webkit-scrollbar {
