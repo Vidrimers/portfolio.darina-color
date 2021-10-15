@@ -1,402 +1,256 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DarinaColor</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/normalize.css" rel="stylesheet" />
-    <!-- <link href="css/popup.css" rel="stylesheet" /> -->
-    <!-- <link href="css/popup_gallery.css" rel="stylesheet" /> -->
-    <link href="css/header.css" rel="stylesheet" />
 
-    <!-- Карусель -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/gridNavigation.css" />
-    <link
-      href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="http://fonts.googleapis.com/css?family=Oswald"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"
-    ></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="js/jquery.gridnav.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $("#tj_container").gridnav({
-          type: {
-            mode: "updown", // use def | fade | seqfade | updown | sequpdown | showhide | disperse | rows
-            speed: 500, // for fade, seqfade, updown, sequpdown, showhide, disperse, rows
-            easing: "", // for fade, seqfade, updown, sequpdown, showhide, disperse, rows
-            factor: "", // for seqfade, sequpdown, rows
-            reverse: "", // for sequpdown
-          },
-        });
-      });
-    </script>
-    <!-- Карусель -->
-  </head>
-  <body>
-    <div class="general">
-      <header>
-        <div class="header-menu">
-          <div class="header__menu-item header-left userpic">
-            <img class="userpic-img" src="img/userpic.jpg" alt="" />
-          </div>
-          <!-- <div class="header__menu-item name header-left"></div> -->
-          <a class="glitch_photo" href="#popup"
-            ><div
-              class="header__menu-item title glitch"
-              data-text="
-          DarinaColor"
-            >
-              DarinaColor
-            </div></a
-          >
-          <div class="header__menu-item contacts">
-            <a class="contacts-item" href="#main__content-contacts"
-              >Дарина Ширякова</a
-            >
-          </div>
-        </div>
-      </header>
-      <div class="main__content">
-        <section id="main__content-about">
-          <h2 class="h-title">Об услуге</h2>
-          <div class="main__content-info">
-            <div class="main__content__about-left">
-              <img class="Photo" src="img/about.jpg" alt="" />
-            </div>
-            <div class="main__content__about-right">
-              <p class="mini-title">Привет, меня зовут Дарина, я колорист</p>
-              <div class="main_content__about-desc">
-                <div class="desc-item-info">
-                  <img src="img/ico/info.png" alt="" />
-                  <p>
-                    Я занимаюсь подбором оттенков, смешиванием красителей с
-                    целью получения нужного тона. Гораздо проще сделать
-                    однотонное окрашивание, достаточно просто подобрать оттенок
-                    с учётом исходного цвета прядей. Но сегодня в тренде
-                    контрастное окрашивание. Рассмотрим наиболее популярные
-                    техники:
-                  </p>
-                </div>
-                <div class="main_content__about-desc-item">
-                  <img class="desc-item-img" src="img/ico/desc.png" alt="" />
-                  <p class="desc-item-text">
-                    <span class="mini-title">Балаяж</span>
-                    <br />
-                    Цвет корней – максимально приближен к натуральному. На
-                    остальную длину пряди окрашиваются в более светлые оттенки.
-                    Преимущество техники в том, что даже при отрастании корней
-                    причёска смотрится красиво.
-                  </p>
-                </div>
-                <div class="main_content__about-desc-item">
-                  <img class="desc-item-img" src="img/ico/desc.png" alt="" />
-                  <p class="desc-item-text">
-                    <span class="mini-title">Шатуш</span>
-                    <br />
-                    При правильном выполнении получается мягкий переход
-                    оттенков. Мастер сначала делает начёс на прядях, затем
-                    наносит на неё краску.
-                  </p>
-                </div>
-                <div class="main_content__about-desc-item">
-                  <img class="desc-item-img" src="img/ico/desc.png" alt="" />
-                  <p class="desc-item-text">
-                    <span class="mini-title">Омбре</span>
-                    <br />
-                    Цвет как бы растягивается. Корни темные, к концам пряди
-                    постепенно светлеют. Особенно красиво такой градиент
-                    получается на длинных и средних волосах.
-                  </p>
-                </div>
-              </div>
-              <div class=".desc-item-price">
-                <img src="img/ico/price.png" alt="" />
-                <p>
-                  Доступная ценовая политика. Оптимальная стоимость позволит Вам
-                  выглядеть при этом сногсшибательно.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- КАРУСЕЛЬ -->
-        <div class="container">
-          <div class="header">
-            <h1>Grid Navigation Effects<span>with jQuery</span></h1>
-            <h2>Move/Fade</h2>
-          </div>
-          <div class="content example4">
-            <div id="tj_container" class="tj_container">
-              <div class="tj_nav">
-                <span id="tj_prev" class="tj_prev">Previous</span>
-                <span id="tj_next" class="tj_next">Next</span>
-              </div>
-              <div class="tj_wrapper">
-                <ul class="tj_gallery">
-                  <li><a href="#"><img src="img/list-items/1.jpg" alt="image01" /></a></li>
-                  <li><a href="#"><img src="img/list-items/2.jpg" alt="image02" /></a></li>
-                  <li><a href="#"><img src="img/list-items/3.jpg" alt="image03" /></a></li>
-                  <li><a href="#"><img src="img/list-items/4.jpg" alt="image04" /></a></li>
-                  <li><a href="#"><img src="img/list-items/5.jpg" alt="image05" /></a></li>
-                  <li><a href="#"><img src="img/list-items/6.jpg" alt="image06" /></a></li>
-                  <li><a href="#"><img src="img/list-items/7.jpg" alt="image07" /></a></li>
-                  <li><a href="#"><img src="img/list-items/8.jpg" alt="image08" /></a></li>
-                  <li><a href="#"><img src="img/list-items/9.jpg" alt="image09" /></a></li>
-                  <li><a href="#"><img src="img/list-items/10.jpg" alt="image10" /></a></li>
-                  <li><a href="#"><img src="img/list-items/11.jpg" alt="image11" /></a></li>
-                  <li><a href="#"><img src="img/list-items/12.jpg" alt="image12" /></a></li>
-                  <li><a href="#"><img src="img/list-items/13.jpg" alt="image13" /></a></li>
-                  <li><a href="#"><img src="img/list-items/14.jpg" alt="image14" /></a></li>
-                  <li><a href="#"><img src="img/list-items/15.jpg" alt="image15" /></a></li>
-                  <li><a href="#"><img src="img/list-items/1.jpg" alt="image01" /></a></li>
-                  <li><a href="#"><img src="img/list-items/2.jpg" alt="image02" /></a></li>
-                  <li><a href="#"><img src="img/list-items/3.jpg" alt="image03" /></a></li>
-                  <li><a href="#"><img src="img/list-items/4.jpg" alt="image04" /></a></li>
-                  <li><a href="#"><img src="img/list-items/5.jpg" alt="image05" /></a></li>
-                  <li><a href="#"><img src="img/list-items/6.jpg" alt="image06" /></a></li>
-                  <li><a href="#"><img src="img/list-items/7.jpg" alt="image07" /></a></li>
-                  <li><a href="#"><img src="img/list-items/8.jpg" alt="image08" /></a></li>
-                  <li><a href="#"><img src="img/list-items/9.jpg" alt="image09" /></a></li>
-                  <li><a href="#"><img src="img/list-items/10.jpg" alt="image10" /></a></li>
-                  <li><a href="#"><img src="img/list-items/11.jpg" alt="image11" /></a></li>
-                  <li><a href="#"><img src="img/list-items/12.jpg" alt="image12" /></a></li>
-                  <li><a href="#"><img src="img/list-items/13.jpg" alt="image13" /></a></li>
-                  <li><a href="#"><img src="img/list-items/14.jpg" alt="image14" /></a></li>
-                  <li><a href="#"><img src="img/list-items/15.jpg" alt="image15" /></a></li>
-                  <li><a href="#"><img src="img/list-items/1.jpg" alt="image01" /></a></li>
-                  <li><a href="#"><img src="img/list-items/2.jpg" alt="image02" /></a></li>
-                  <li><a href="#"><img src="img/list-items/3.jpg" alt="image03" /></a></li>
-                  <li><a href="#"><img src="img/list-items/4.jpg" alt="image04" /></a></li>
-                  <li><a href="#"><img src="img/list-items/5.jpg" alt="image05" /></a></li>
-                  <li><a href="#"><img src="img/list-items/6.jpg" alt="image06" /></a></li>
-                  <li><a href="#"><img src="img/list-items/7.jpg" alt="image07" /></a></li>
-                  <li><a href="#"><img src="img/list-items/8.jpg" alt="image08" /></a></li>
-                  <li><a href="#"><img src="img/list-items/9.jpg" alt="image09" /></a></li>
-                  <li><a href="#"><img src="img/list-items/10.jpg" alt="image10" /></a></li>
-                  <li><a href="#"><img src="img/list-items/11.jpg" alt="image11" /></a></li>
-                  <li><a href="#"><img src="img/list-items/12.jpg" alt="image12" /></a></li>
-                  <li><a href="#"><img src="img/list-items/13.jpg" alt="image13" /></a></li>
-                  <li><a href="#"><img src="img/list-items/14.jpg" alt="image14" /></a></li>
-                  <li><a href="#"><img src="img/list-items/15.jpg" alt="image15" /></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        <!-- КАРУСЕЛЬ -->
-        <section id="main__content-portfolio">
-          <h2 class="h-title">Мои работы</h2>
-          <p class="mini-title">Здесь показаны некоторые мои работы</p>
-          <div id="main__content-list" class="main__content-list">
-            <a class="popup" href="img/list-items/1.jpg"
-              ><img
-                src="img/list-items/thumb/1_thumb.jpg"
-                alt=""
-                class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/2.jpg"
-              ><img
-                src="img/list-items/thumb/2_thumb.jpg"
-                alt=""
-                class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/3.jpg"
-              ><img src="img/list-items/3.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/4.jpg"
-              ><img src="img/list-items/4.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/5.jpg"
-              ><img src="img/list-items/5.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/6.jpg"
-              ><img src="img/list-items/6.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/7.jpg"
-              ><img src="img/list-items/7.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/8.jpg"
-              ><img src="img/list-items/8.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/9.jpg"
-              ><img src="img/list-items/9.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/10.jpg"
-              ><img src="img/list-items/10.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/11.jpg"
-              ><img src="img/list-items/11.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/12.jpg"
-              ><img src="img/list-items/12.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/13.jpg"
-              ><img src="img/list-items/13.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/14.jpg"
-              ><img src="img/list-items/14.jpg" alt="" class="list-items"
-            /></a>
-            <a class="popup" href="img/list-items/15.jpg"
-              ><img src="img/list-items/15.jpg" alt="" class="list-items"
-            /></a>
-          </div>
-        </section>
-        <section class="main__content-contacts" id="main__content-contacts">
-          <h2 class="h-title">Контакты</h2>
-          <p class="mini-title">
-            Связаться со мной можно через инстаграм, либо написать на почту:
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DarinaColor</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <!-- <link href="css/popup.css" rel="stylesheet" /> -->
+  <!-- <link href="css/popup_gallery.css" rel="stylesheet" /> -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="page-section about" id="about">
+    <div class="container">
+      <div class="about__container">
+        <img class="about__photo" src="img/about2.jpg" alt="" />
+        <div class="about__content">
+          <h1 class="about__title">Привет, меня зовут Дарина, я колорист</h1>
+          <p class="about__content-info">
+            Я занимаюсь подбором оттенков, смешиванием красителей с
+            целью получения нужного тона. Гораздо проще сделать
+            однотонное окрашивание, достаточно просто подобрать оттенок
+            с учётом исходного цвета прядей. Но сегодня в тренде
+            контрастное окрашивание. Рассмотрим наиболее популярные
+            техники:
           </p>
-          <a
-            class="insta-link"
-            target="_blank"
-            href="https://www.instagram.com/darina_color/"
-            ><img class="insta" src="img/ico/insta.png" alt=""
-          /></a>
+          <p class="about__content-item">
+            <span class="about__content-title">Балаяж</span>
+            Цвет корней – максимально приближен к натуральному. На
+            остальную длину пряди окрашиваются в более светлые оттенки.
+            Преимущество техники в том, что даже при отрастании корней
+            причёска смотрится красиво.
+          </p>
+          <p class="about__content-item">
+            <span class="about__content-title">Шатуш</span>
+            При правильном выполнении получается мягкий переход
+            оттенков. Мастер сначала делает начёс на прядях, затем
+            наносит на неё краску.
+          </p>
+          <p class="about__content-item">
+            <span class="about__content-title">Омбре</span>
+            Цвет как бы растягивается. Корни темные, к концам пряди
+            постепенно светлеют. Особенно красиво такой градиент
+            получается на длинных и средних волосах.
+          </p>
+          
           <form action="" method="get">
-            <input
-              disabled
-              class="form-item"
-              required
-              type="text"
-              name="name"
-              placeholder="Имя"
-            />
-            <input
-              disabled
-              class="form-item"
-              required
-              type="city"
-              name="city"
-              placeholder="Город"
-            />
-            <input
-              disabled
-              class="form-item"
-              required
-              type="tel"
-              name="phone"
-              placeholder="Телефон"
-            />
-            <input
-              disabled
-              class="form-item"
-              required
-              type="email"
-              name="email"
-              placeholder="Почта"
-            />
-            <textarea
-              disabled
-              class="form-item textarea"
-              name=""
-              id=""
-              placeholder="Напишите ваши пожелания к заказу или отзыв"
-            ></textarea>
-            <button disabled type="submit" class="form-item btn">
-              Отправить
-            </button>
-          </form>
-        </section>
-      </div>
-      <footer>
-        <div class="footer-container">
-          <div class="footer__container-left">
-            <p class="footer-author">Designed by SJ</p>
-          </div>
+            <p class="form__title">
+              Связаться со мной можно заполнив форму, либо через директ инстаграма:
+            </p>
+            <input class="form__item" required type="text" name="name" placeholder="Имя" />
+            <input class="form__item" required type="city" name="city" placeholder="Город" />
+            <input class="form__item" required type="tel" name="phone" placeholder="Телефон" />
+            <textarea resize="none" class="form__item textarea" name="" id=""
+              placeholder="Напишите ваши пожелания к заказу или отзыв"></textarea>
+            <div class="form__btns">
+              <button class="form__item1 btn" type="submit" >
+                Отправить
+              </button>
+              <a class="form__social-link" target="_blank" href="https://www.instagram.com/darina_color/"><img class="insta"
+                src="img/ico/insta.png" alt="" /></a>
+            </div>
+            </form>
+            <a href="#portfolio"><img class="arrow-down" src="img/ico/arrow-down.png" alt=""></a>
+        </div> <!-- about__content -->
+      </div> <!-- about__container -->
+    </div> <!-- контейнер -->
+  </section>
 
-          <div class="footer__container-right">
-            <a
-              target="_blank"
-              href="https://vidrimers.github.io/"
-              class="social-link"
-              ><img src="img/ico/site.png" alt="" class="social-img git-img"
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.fl.ru/users/jarosiks/portfolio/"
-              class="socials"
-              ><img src="img/ico/fl.png" alt="" class="social-img fl-img"
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/yaroslav-shiryakov-79a426183/"
-              class="socials"
-              ><img src="img/ico/linkedin.svg" alt="" class="social-img in-img"
-            /></a>
-            <a
-              target="_blank"
-              href="https://vk.com/d1e_my_darling"
-              class="social-link"
-              ><img
-                src="img/ico/vk2_96_color.png"
-                alt=""
-                class="social-img vk-img"
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/jarosik"
-              class="social-link"
-              ><img
-                src="img/ico/facebook_96_color.png"
-                alt=""
-                class="social-img fb-img"
-            /></a>
-          </div>
-        </div>
-      </footer>
-    </div>
 
-    <!-- <div class="zoom-gallery"> -->
-    <!--
-    
-      Width/height ratio of thumbnail and the main image must match to avoid glitches.
-    
-      If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable.
-    
-       -->
-    <!-- <a
-        href="http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg"
-        data-source="http://500px.com/photo/32736307"
-        target="_blank"
-        title="Into The Blue"
-        style="width: 193px; height: 125px"
-      >
-        <img
-          src="http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg"
-          width="193"
-          height="125"
-        />
-      </a>
-      <a
-        href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg"
-        data-source="http://500px.com/photo/32554131"
-        title="Light Sabre"
-        style="width: 82px; height: 125px"
-      >
-        <img
-          src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg"
-          width="82px"
-          height="125"
-        />
-      </a>
+  <section class="page-section portfolio" id="portfolio">
+    <!-- <div class="portfolio__content">
+      <a class="popup" href="img/list-items/1.jpg"><img src="img/list-items/thumb/1 thumb.jpg" alt=""
+          class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/2.jpg"><img src="img/list-items/thumb/2 thumb.jpg" alt=""
+          class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/3.jpg"><img src="img/list-items/thumb/3 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/4.jpg"><img src="img/list-items/thumb/4 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/5.jpg"><img src="img/list-items/thumb/5 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/6.jpg"><img src="img/list-items/thumb/6 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/7.jpg"><img src="img/list-items/thumb/7 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/8.jpg"><img src="img/list-items/thumb/8 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/9.jpg"><img src="img/list-items/thumb/9 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/10.jpg"><img src="img/list-items/thumb/10 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/11.jpg"><img src="img/list-items/thumb/11 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/12.jpg"><img src="img/list-items/thumb/12 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/13.jpg"><img src="img/list-items/thumb/13 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/14.jpg"><img src="img/list-items/thumb/14 thumb.jpg" alt="" class="portfolio__item" /></a>
+      <a class="popup" href="img/list-items/15.jpg"><img src="img/list-items/thumb/15 thumb.jpg" alt="" class="portfolio__item" /></a>
     </div> -->
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
-  </body>
+    <!-- ГАЛЕРЕЯ -->
+
+<!-- Container for the image gallery -->
+<div class="gallery__container">
+
+  <!-- Full-width images with number text -->
+  <div class="full__photo">
+    <div class="numbertext">1 / 15</div>
+      <img src="img/list-items/1.jpg" style="width:100%">
+  </div>
+
+  <div class="full__photo">
+    <div class="numbertext">2 / 15</div>
+      <img src="img/list-items/2.jpg" style="width:100%">
+  </div>
+
+  <div class="full__photo">
+    <div class="numbertext">3 / 15</div>
+      <img src="img/list-items/3.jpg" style="width:100%">
+  </div>
+
+  <div class="full__photo">
+    <div class="numbertext">4 / 15</div>
+      <img src="img/list-items/4.jpg" style="width:100%">
+  </div>
+
+  <div class="full__photo">
+    <div class="numbertext">5 / 15</div>
+      <img src="img/list-items/5.jpg" style="width:100%">
+  </div>
+
+  <div class="full__photo">
+    <div class="numbertext">6 / 15</div>
+      <img src="img/list-items/6.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">7 / 15</div>
+      <img src="img/list-items/7.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">8 / 15</div>
+      <img src="img/list-items/8.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">9 / 15</div>
+      <img src="img/list-items/9.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">10 / 15</div>
+      <img src="img/list-items/10.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">11 / 15</div>
+      <img src="img/list-items/11.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">12 / 15</div>
+      <img src="img/list-items/12.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">13 / 15</div>
+      <img src="img/list-items/13.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">14 / 15</div>
+      <img src="img/list-items/14.jpg" style="width:100%">
+  </div>
+  <div class="full__photo">
+    <div class="numbertext">15 / 15</div>
+      <img src="img/list-items/15.jpg" >
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- THUMBNAIL images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/1 thumb.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/2 thumb.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/3 thumb.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/4 thumb.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/5 thumb.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/6 thumb.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/7 thumb.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/8 thumb.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/9 thumb.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/10 thumb.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/11 thumb.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/12 thumb.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/13 thumb.jpg" style="width:100%" onclick="currentSlide(13)" alt="">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/14 thumb.jpg" style="width:100%" onclick="currentSlide(14)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/list-items/thumb/15 thumb.jpg" style="width:100%" onclick="currentSlide(15)" alt="">
+    </div>
+  </div>
+</div>
+
+    <!-- ГАЛЕРЕЯ КОНЕЦ -->
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer__container-left">
+        <p class="footer-author">Designed by SJ</p>
+      </div>
+
+      <div class="footer__container-right">
+        <a target="_blank" href="https://vidrimers.github.io/" class="social-link"><img src="img/ico/site.png" alt=""
+            class="social-img git-img" /></a>
+        <a target="_blank" href="https://www.fl.ru/users/jarosiks/portfolio/" class="socials"><img src="img/ico/fl.png"
+            alt="" class="social-img fl-img" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/yaroslav-shiryakov-79a426183/" class="socials"><img
+            src="img/ico/linkedin.svg" alt="" class="social-img in-img" /></a>
+        <a target="_blank" href="https://vk.com/d1e_my_darling" class="social-link"><img src="img/ico/vk2_96_color.png"
+            alt="" class="social-img vk-img" /></a>
+        <a target="_blank" href="https://www.facebook.com/jarosik" class="social-link"><img
+            src="img/ico/facebook_96_color.png" alt="" class="social-img fb-img" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+  <script src="js/style.js"></script>
+</body>
+
 </html>
