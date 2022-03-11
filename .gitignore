@@ -29,12 +29,9 @@ node_modules
 # logs
 npm-debug.log
 
-temp
-Temp
-!temp
-!Temp
+/temp
+/Temp
+/!temp
+/!Temp
 package-lock.json
 
-1.file
-2.file
-3.file
