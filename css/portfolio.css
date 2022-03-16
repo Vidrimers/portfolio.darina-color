@@ -1,0 +1,32 @@
+.portfolio{
+  background: url('../img/color/4.png');
+  padding-bottom: 5rem;
+}
+.portfolio__color{
+  display: none;
+}
+.gallery__items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.gallery__item{
+  transition: all .3s ease-out;
+}
+.gallery__item:hover{
+  transform: scale(1.5);
+}
+.gallery__thumb{
+  width: 100%;
+}
+
+
+
+
+
+
+
+.gallery__item {
+  z-index: 2;
+}

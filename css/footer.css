@@ -1,0 +1,53 @@
+.footer {
+  background-color: #3f4141;
+  padding: 1rem 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+}
+
+.footer__author {
+  position: relative;
+  color: #6a6a6b;
+  font-size: 1.5rem;
+  transition: all .3s;
+}
+
+.footer__author:hover {
+  
+
+  position: relative;
+  transition: all .3s;
+
+}
+.footer__author:hover::after{
+content: '';
+background: url(../img/ico/arrow-right.png) no-repeat;
+background-position: center 50%;
+background-size: contain;
+position: absolute;
+right: -5rem;
+bottom: -50%;
+width: 3rem;
+height: 3rem;
+}
+
+.footer__social{
+}
+.social-link+.social-link{
+  margin-left: .5rem;
+}
+.social-img {
+  width: 3rem;
+  opacity: .5;
+  transition: opacity 0.3s linear;
+}
+
+.social-img:hover {
+  opacity: 1;
+}

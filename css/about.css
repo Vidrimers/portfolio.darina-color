@@ -1,28 +1,7 @@
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(to left, #7fffd4, #346e5b);
-}
-
-.container {
-  max-width: 127rem;
-  padding-right: 0 1.5rem;
-  margin: 0 auto;
-}
-
-.page-section {
-  /* min-height: 100vh; */
-}
 
 .about {
   margin-bottom: 5rem;
 }
-
-
 
 .about__container {
   background: url('../img/color/2.png') no-repeat;
@@ -164,8 +143,6 @@ body {
   height: 4rem;
   left: .5rem;
   top: 1rem;
-  /* transform: translateY(50%); */
-  /* margin-right: 3rem; */
   background-image: url(../img/ico/insta__.svg);
   background-size: cover;
 }
@@ -195,7 +172,6 @@ body {
   transform: translateX(-50%) scale(1.5);
   bottom: 3rem;
   color: #346e5b;
-  /* opacity: 0.9; */
 }
 .arrow-down {
   opacity: 1;
@@ -203,83 +179,3 @@ body {
   width: 3rem;
   transition: all .3s;
 }
-.arrow-down:hover{
-  /* transform: scale(1.5); */
-}
-
-.portfolio{
-  background: url('../img/color/4.png');
-  padding-bottom: 5rem;
-}
-.gallery__items{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 0 1rem;
-}
-.gallery__item{
-  transition: all .3s ease-out;
-}
-.gallery__item:hover{
-  transform: scale(1.5);
-}
-.gallery__thumb{
-  width: 100%;
-}
-
-/* FOOOTER */
-footer {
-  background-color: #3f4141;
-  padding: 1rem 0;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-
-}
-
-.footer__author {
-  position: relative;
-  color: #6a6a6b;
-  font-size: 1.5rem;
-  transition: all .3s;
-}
-
-.footer__author:hover {
-  
-
-  position: relative;
-  transition: all .3s;
-
-}
-.footer__author:hover::after{
-content: '';
-background: url(../img/ico/arrow-right.png) no-repeat;
-background-position: center 50%;
-background-size: contain;
-position: absolute;
-right: -5rem;
-bottom: -50%;
-width: 3rem;
-height: 3rem;
-}
-
-.footer__social{
-}
-.social-link+.social-link{
-  margin-left: .5rem;
-}
-.social-img {
-  width: 3rem;
-  opacity: .5;
-  transition: opacity 0.3s linear;
-}
-
-.social-img:hover {
-  opacity: 1;
-}
-
-/* FOOTER END */
