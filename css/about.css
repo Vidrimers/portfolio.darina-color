@@ -170,6 +170,7 @@
 }
 .arrow-link:hover{
   transform: translateX(-50%) scale(1.5);
+  position: absolute;
   bottom: 3rem;
   color: #346e5b;
 }

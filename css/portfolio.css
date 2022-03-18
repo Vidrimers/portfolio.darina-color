@@ -20,13 +20,3 @@
 .gallery__thumb{
   width: 100%;
 }
-
-
-
-
-
-
-
-.gallery__item {
-  z-index: 2;
-}

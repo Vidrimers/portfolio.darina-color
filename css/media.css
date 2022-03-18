@@ -64,16 +64,29 @@
   }
 
   .insta-link {
-    margin: 0 auto 3rem
+    margin: 0 auto 3rem;
+    z-index: 5;
   }
 
-  .arrow-link {}
+  .arrow-link {
+    z-index: 5;
+  }
 
   .arrow-link:hover {
     transform: translateX(-50%) scale(1);
-    /* transform: none; */
-    /* bottom: 3rem; */
-    /* color: #346e5b; */
+    bottom: 1rem;
+    z-index: 5;
+    color: #000;
+
+  }
+  .gallery__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery__item {
+    z-index: 2;
+  }
+  .gallery__item:hover{
+    transform: scale(1);
   }
 }
 
@@ -203,7 +216,7 @@
     display: none;
   }
   .portfolio__color:nth-child(6){
-    left: -50rem;
+    left: -64rem;
   }
 }
 
