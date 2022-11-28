@@ -1,3 +1,0 @@
-<div class="container">
-<h1 class="glitch" data-title="GLITCH">GLITCH</h1>
-</div>

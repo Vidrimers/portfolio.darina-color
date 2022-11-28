@@ -29,11 +29,9 @@ node_modules
 # logs
 npm-debug.log
 
-/dist
+
 /temp
-/Temp
 /!temp
-/!Temp
 /node_modules
 package-lock.json
 .gitattributes

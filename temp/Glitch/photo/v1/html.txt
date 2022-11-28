@@ -1,1 +1,0 @@
-<canvas id="glitch_canvas"></canvas>
