@@ -15,12 +15,14 @@ html{
 }
 
 body {
-  /* min-height: 100vh; */
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
   height:100%;
   display: flex;
   flex-direction: column;
-  font-family: 'Cuprum', sans-serif;
-  font-family: 'Press Start 2P', cursive;
+  /* font-family: 'Press Start 2P', cursive; */
   /* background: ; */
   /* background: url('../img/color/2.png') no-repeat, linear-gradient(to left, #7fffd4, #346e5b); */
   /* background-size: contain; */
@@ -42,8 +44,4 @@ body {
   max-width: 126rem;
   padding: 0 1rem;
   margin: 0 auto;
-}
-
-.page-section {
-  /* min-height: 100vh; */
 }

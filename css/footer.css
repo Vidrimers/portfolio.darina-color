@@ -1,5 +1,5 @@
 .footer {
-  background-color: #3f4141;
+  background: rgba(7, 3, 3, 0.5);
   /* opacity: .7; */
   margin-top: auto;
   padding: 1rem 0;
@@ -32,6 +32,7 @@
   margin-left: .5rem;
 }
 .social-img {
+  /* background: #30d5c8; */
   width: 3rem;
   opacity: .5;
   filter: grayscale(1);
