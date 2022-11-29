@@ -4,36 +4,16 @@
     max-height: none;
   }
 
-  .wrapper {
-    padding: 1rem 0;
-  }
 
-  .about__container {
-    background: none;
-    /* background-position: bottom; */
-
-    flex-direction: column;
-  }
-
-  .about__color-5 {
-    /* display: none; */
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 60rem;
-    transform: scale(-1, 1);
-  }
-
-  .about__color-6 {
-    /* display: none; */
-    display: block;
-    position: absolute;
-    right: -160px;
-    bottom: 270px;
-    width: 60rem;
-    /* transform: scale(-1, 1); */
-  }
+ .about__inner{
+  flex-direction: column;
+  margin: 0 auto;
+ }
+ .glitch-image{
+   margin: 0 auto;
+   width: 100%;
+   /* Перенести глитч 100% в адаптив ниже */
+ }
 
   .about__content {
     padding-bottom: 5rem;
@@ -45,40 +25,6 @@
     margin-bottom: 1rem;
   }
 
-  .title {
-    display: none;
-  }
-
-  .title-mobile {
-    display: block;
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-    color: #000000;
-    font-weight: bold;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto 1rem;
-    opacity: .7;
-  }
-
-  .insta-link {
-    margin: 0 auto 3rem;
-    z-index: 5;
-  }
-
-  .arrow-link {
-    z-index: 5;
-  }
-
-  .arrow-link:hover {
-    transform: translateX(-50%) scale(1);
-    bottom: 1rem;
-    z-index: 5;
-    color: #000;
-
-  }
   .gallery__items {
     grid-template-columns: repeat(3, 1fr);
   }

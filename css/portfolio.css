@@ -1,5 +1,8 @@
+.lightbox{
+  position: fixed;
+}
 .portfolio{
-  background: url('../img/color/4.png');
+  /* background: url('../img/color/4.png'); */
   padding-bottom: 5rem;
 }
 .portfolio__color{
@@ -7,16 +10,19 @@
 }
 .gallery__items{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 10rem;
 }
 .gallery__item{
   transition: all .3s ease-out;
+  opacity: .7;
 }
 .gallery__item:hover{
-  transform: scale(1.5);
+  /* transform: scale(1.1); */
+  opacity: 1;
 }
 .gallery__thumb{
   width: 100%;
+  border-radius: 2rem;
 }
