@@ -1,12 +1,13 @@
 .footer {
   background-color: #3f4141;
-  opacity: .7;
+  /* opacity: .7; */
+  margin-top: auto;
   padding: 1rem 0;
 }
 
 .footer__inner {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 2rem;
   align-items: center;
   padding: 0 1rem;
@@ -14,8 +15,9 @@
 }
 
 .footer__author {
+  font-family: 'Cuprum', sans-serif;
   position: relative;
-  color: #6a6a6b;
+  color: #9b9b9e;
   font-size: 1.5rem;
   transition: all .3s;
 }
@@ -26,8 +28,6 @@
 
 }
 
-.footer__social{
-}
 .social-link+.social-link{
   margin-left: .5rem;
 }

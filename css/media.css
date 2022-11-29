@@ -1,108 +1,91 @@
 /* 1170(slg) 992(lg) 768(md) 576(sm) 480(ssm) 320(xs) */
 @media (max-width: 1170px) {
-  .page-section {
+  /* .page-section {
     max-height: none;
-  }
+  } */
 
 
  .about__inner{
-  flex-direction: column;
   margin: 0 auto;
- }
- .glitch-image{
-   margin: 0 auto;
-   width: 100%;
-   /* Перенести глитч 100% в адаптив ниже */
+  gap: 1rem;
  }
 
-  .about__content {
-    padding-bottom: 5rem;
-  }
+
+
 
   .about__photo {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 1rem;
   }
 
   .gallery__items {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gallery__item {
-    z-index: 2;
-  }
-  .gallery__item:hover{
-    transform: scale(1);
+  
+  .social-img {
+    opacity: 1;
+    filter: grayscale(0);
+    transition: none;
   }
 }
 
-
-
 @media (max-width: 992px) {
-  .about__items {
-    align-items: center;
+  .about__inner{
     flex-direction: column;
   }
-
-  .about__content-item {
-    width: 50%;
+  .about__link{
+    background: #30d5c8;
+    padding: 2rem 1rem 2rem 5rem;
+  }
+  .about__link::before {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  .about__link:hover {
+    padding: 2rem 1rem 2rem 5rem;
+    color: inherit;
+    transform: none;
+  
+  }
+  .about__link:hover:before{
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    left: .5rem;
+    transition: none;
   }
 
-  .portfolio {
-    background: transparent;
+  .about__link:active{
+    opacity: 1;
   }
+  
+  .glitch-image{
+    margin: 0 auto;
+    width: 100%;
+    /* Перенести глитч 100% в адаптив ниже */
+  }
+
 
   .portfolio__inner {
     position: relative;
     /* overflow: hidden; */
   }
 
-  .portfolio__color {
-    position: absolute;
-    /* max-width: 100%; */
-    display: block;
-    z-index: 1;
-  }
-  .portfolio__color:first-child{
-    transform: rotate(90deg);
-    top: -25rem;
-    left: 0;
-  }
-  .portfolio__color:nth-child(2){
-    transform: rotate(-90deg);
-    right: 0;
-    top: 100rem;
-  }
-  .portfolio__color:nth-child(3){
-    transform: rotate(90deg);
-    left: 0;
-    bottom: 77rem;
-  }
-  .portfolio__color:nth-child(4){
-    display: none;
-    transform: rotate(-90deg);
-    right: 0;
-    bottom: 32rem;
-  }
-  .portfolio__color:nth-child(5){
-    display: none;
-    transform: rotate(90deg);
-    left: 0;
-    bottom: -34rem;
-  }
-  .portfolio__color:nth-child(6){
-    transform: rotate(0);
-    width: 100vh;
-    left: -70rem;
-    bottom: -5rem;
-  }
-
   .gallery__items {
-    grid-template-columns: repeat(2, 1fr);
+  display: block;
+  grid-template-columns: none;
+  gap: 0;
+  padding: 0;
   }
+  
 
   .gallery__item {
-    /* z-index: 2; */
+    opacity: 1;
   }
 
   .gallery__item:hover {
@@ -115,84 +98,15 @@
 
 }
 
+@media (max-width: 768px) {}
 
-
-@media (max-width: 768px) {
-  .title-mobile {
-    font-size: 3rem;
-  }
-
-  .about__content-item {
-    width: 60%;
-  }
-
-  .gallery__items {
-    grid-template-columns: 1fr;
-  }
-
-  .portfolio__color:nth-child(3){
-    bottom: 700rem;
-  }
-  .portfolio__color:nth-child(4){
-    display: block;
-    bottom: 400rem;
-  }
-  .portfolio__color:nth-child(5){
-    display: block;
-    bottom: 255rem;
-  }
-  .portfolio__color:nth-child(6){
-    width: auto;
-    left: -30rem;
-  }
-}
-
-
-
-@media (max-width: 576px) {
-  .title-mobile {
-    font-size: 2.5rem;
-  }
-
-  .about__content-item {
-    width: 70%;
-  }
-  .portfolio__color:nth-child(3){
-    left: -50rem;
-    display: none;
-  }
-  .portfolio__color:nth-child(6){
-    left: -64rem;
-  }
-}
-
-
+@media (max-width: 576px) {}
 
 @media (max-width: 480px) {
-  .title-mobile {
-    font-size: 2rem;
-  }
-
-  .about__content-item {
-    width: 100%;
-  }
-
   .footer__inner {
     flex-direction: column;
     gap: 1rem;
   }
-  .portfolio__color:nth-child(3){
-    bottom: 0;
-  }
 }
 
-
-
-@media (max-width: 320px) {
-  .portfolio__color:nth-child(6){
-    left: -70rem;
-  }
-  .portfolio__color:nth-child(4){
-    display: none;
-  }
-}
+@media (max-width: 320px) {}
